@@ -1,0 +1,144 @@
+::selection{
+    background: #3E82DC;
+    color: #fff;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    color: #212736;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+ul, li{
+    list-style: none;
+}
+h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #3E82DC;
+    color: #fff;
+    display: block;
+    width: min-content;
+    white-space: nowrap;
+    border-radius: .3125rem;
+    transition: linear .2s background-color;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #3E82DC;
+}
+.btn-large{
+    padding: 1em 2.5em;
+    font-size: 1.1rem;
+}
+
+/*Home*/
+.welcome-message-wrapper{
+    padding-top: 10vh;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-message .left{
+    margin-right: 2.5rem;
+}
+.welcome-message{
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+.welcome-message p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    opacity: .8;
+    max-width: 30ch;
+}
+.welcome-message a{
+    margin-top: 2rem;
+} 
+/*Media queries*/
+
+@media (max-width: 1200px){
+    .welcome-message-img{
+        width: 100%;
+        max-width: 500px;
+    }
+    .welcome-message h1{
+        font-size: 2.25rem;
+        max-width: 20ch;
+    }
+    .welcome-message p{
+        font-size: 1rem;
+        max-width: 40ch;
+    }
+    .btn-large{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1000px){
+    .welcome-message-img{
+        display: none;
+    }
+    .welcome-message-wrapper{
+        padding-top: 20vh;
+        justify-content: center;
+    }
+    .welcome-message{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-message.left{
+        margin-right: 0;
+    }
+    .welcome-message h1{
+        font-size: 3rem;
+    }
+    .welcome-message p{
+        font-size: 1.5rem;
+    }
+    .welcome-message .btn-large{
+        font-size: 1.05rem;
+    }
+}
+@media(max-width: 615px){
+    .welcome-message h1{
+        font-size: 2.5rem;
+    }
+    .welcome-message p{
+        font-size: 1.25rem;
+    }
+    .welcome-message .btn-large{
+        font-size: 1rem;
+    }
+}
+@media(max-width: 445px){
+    .welcome-message h1{
+        font-size: 2rem;
+    }
+    .welcome-message p{
+        font-size: 1rem;
+    }
+    .welcome-message .btn-large{
+        font-size: 1;
+    }
+
+    .welcome-message-wrapper{
+        padding: 1.25rem;
+        padding-top: 20vh;
+    }
+}

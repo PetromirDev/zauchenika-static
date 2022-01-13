@@ -1,0 +1,98 @@
+::selection{
+    background: #3E82DC;
+    color: #fff;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1em;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    color: #000;
+}
+ul > li{
+    list-style-type:disc;
+}
+ol > li{
+    list-style-type: decimal;
+}
+ul{
+    margin: .5rem 0;
+}
+li{
+    opacity: .8;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.5rem;
+    opacity: .9;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: .8;
+    margin-top: 3rem;
+}
+h4{
+    font-size: 1.1rem;
+    opacity: .7;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+p{
+    font-size: 1rem;
+    opacity: .8;
+    display: block;
+    text-align: justify;
+    margin-top: 1rem;
+}
+.document-wrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+/*Typography*/
+.center{
+    text-align: center;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.big-list > li{
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+.m-0{
+    margin: 0;
+}
+
+@media (max-width: 1300px){
+    .document-wrapper{
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
