@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начало | ЗаУченика</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/documents.css" type="text/css">
+    <link rel="stylesheet" href="/styles/navbar.css" type="text/css">
+    <style>
+        .responsive-row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .responsive-row > div{
+            margin-right: 3rem;
+        }
+        .responsive-row > div:last-child{
+            margin-right: 0;
+        }
+        @media (max-width: 948px){
+            .responsive-row{
+                flex-direction: column;
+            }
+            .responsive-row > div{
+                margin: 0;
+            }
+        }
+        .header{
+            font-size: 3rem;
+        }
+        @media (max-width: 1200px){
+            .header{
+                font-size: 2.5rem;
+            }
+        }
+        @media (max-width: 900px){
+            .header{
+                font-size: 2rem;
+            }
+        }
+        h2{
+            font-size: 1.1rem;
+            opacity: .7;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen">
+        <div id="bg"></div>
+        <div class="navbar container">
+            <div class="mobile-nav">
+                <header class="logo">ЗаУченика</header>
+                <img src="/images/menu.svg" width="30" height="30" id="menu"/>
+            </div>
+            <nav class="navigation">
+                <a href="/" class="nav-link">Начало</a>
+                <a href="/data-deletion/" class="nav-link">Изтриване на данни</a>
+                <a href="/privacy-policy/" class="nav-link">Политика за поверителността</a>
+            </nav>
+        </div>
+        <div class="document-wrapper">    
+            <h1 class="center header">ИНСТРУКЦИИ ЗА ИЗТРИВАНЕ НА ЛИЧНИ ДАННИ</h1>
+            <div class="responsive-row">
+                <div>
+                    <h2 class="mt-3">1. Натискате върху профил от навигацията</h2>
+                    <img src="/images/how-to-delete-1.png" height="500"/>
+                </div>
+                <div>
+                    <h2 class="mt-3">2. Натискате върху "Изтриване на профил"</h2>
+                    <img src="/images/how-to-delete-2.png" height="500"/>
+                </div>
+                <div>
+                    <h2 class="mt-3">3. Потвърдете при натискане на "Да"</h2>
+                    <img src="/images/how-to-delete-3.png" height="500"/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const menu = document.getElementById('menu');
+        const bg = document.getElementById('bg')
+        const navigation = document.querySelector('.navigation');
+        menu.addEventListener('click', () => {
+            if(navigation.classList.contains("nav-open")) {
+                navigation.classList.remove("nav-open");
+                bg.classList.remove("nav-open");
+            } else {
+                navigation.classList.toggle("nav-open");
+                bg.classList.toggle("nav-open");
+            }
+        });
+        bg.addEventListener('click', () => {
+            if(navigation.classList.contains("nav-open")) {
+                navigation.classList.remove("nav-open");
+                bg.classList.remove("nav-open");
+            }
+        })
+    </script>
+</body>
+</html>

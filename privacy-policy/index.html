@@ -132,5 +132,25 @@
         <h3 >12. КАК МОЖЕТЕ ДА ПРЕГЛЕДАТЕ, АКТУАЛИЗИРАТЕ ИЛИ ИЗТРИВАТЕ ДАННИТЕ, КОИТО СЪБИРАМЕ ОТ ВАС?</h3>
         <p>Въз основа на приложимите закони на Република България може да имате право да поискате достъп до личната информация, която събираме от вас, да промените тази информация или да я изтриете при определени обстоятелства. За да поискате преглед, актуализиране или изтриване на вашата лична информация, моля, посетете: https://zauchenikabg.live/.</p>
     </div>
+    <script>
+        const menu = document.getElementById('menu');
+        const bg = document.getElementById('bg')
+        const navigation = document.querySelector('.navigation');
+        menu.addEventListener('click', () => {
+            if(navigation.classList.contains("nav-open")) {
+                navigation.classList.remove("nav-open");
+                bg.classList.remove("nav-open");
+            } else {
+                navigation.classList.toggle("nav-open");
+                bg.classList.toggle("nav-open");
+            }
+        });
+        bg.addEventListener('click', () => {
+            if(navigation.classList.contains("nav-open")) {
+                navigation.classList.remove("nav-open");
+                bg.classList.remove("nav-open");
+            }
+        })
+    </script>
 </body>
 </html>

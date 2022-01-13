@@ -96,6 +96,8 @@ h1{
     .welcome-message-wrapper{
         padding-top: 20vh;
         justify-content: center;
+        height: 80%;
+
     }
     .welcome-message{
         text-align: center;
@@ -114,6 +116,7 @@ h1{
     .welcome-message .btn-large{
         font-size: 1.05rem;
     }
+
 }
 @media(max-width: 615px){
     .welcome-message h1{
@@ -125,6 +128,10 @@ h1{
     .welcome-message .btn-large{
         font-size: 1rem;
     }
+    .welcome-message-wrapper{
+        height: 100%;
+    }
+
 }
 @media(max-width: 445px){
     .welcome-message h1{
