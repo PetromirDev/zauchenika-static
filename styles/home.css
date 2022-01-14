@@ -128,8 +128,16 @@ h1{
     .welcome-message .btn-large{
         font-size: 1rem;
     }
-    .welcome-message-wrapper{
+    /* .welcome-message-wrapper{
         height: 100%;
+    } */
+    .welcome-message-img{
+        display: block;
+        width: 50%;
+        
+    }
+    .welcome-message-wrapper{
+        flex-direction: column-reverse;
     }
 
 }
@@ -147,5 +155,8 @@ h1{
     .welcome-message-wrapper{
         padding: 1.25rem;
         padding-top: 20vh;
+    }
+    .welcome-message-img{
+        width: 100%;
     }
 }
